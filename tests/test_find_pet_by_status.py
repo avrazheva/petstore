@@ -13,7 +13,6 @@ pytestmark = [allure.suite("GET /findByStatus")]
     "pet_status",
     (
         PetStatus.AVAILABLE.value,
-        PetStatus.SOLD.value,
         PetStatus.PENDING.value,
         "", "3737", "$@#$!", u'\U0001f604'
     )

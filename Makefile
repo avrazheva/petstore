@@ -10,3 +10,6 @@ client:
 
 test:
 	poetry run pytest tests/ -n auto --alluredir=allure-report/
+
+report:
+	poetry run allure serve allure-report
