@@ -15,6 +15,7 @@ swagger-codegen = "^0.1.31"
 Werkzeug = "1.0.0"
 MarkupSafe = "2.0.1"
 allure-pytest = "^2.11.1"
+isort = "^5.10.1"
 
 
 [tool.poetry.dev-dependencies]

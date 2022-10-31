@@ -2,12 +2,13 @@
 Tests for checking POST /pet handler for adding a new pet
 """
 
-import pytest
 import allure
-from utils.random_simple_data_util import generate_random_string, generate_random_image_url
-from utils.pet_util import create_pet_tag, PetStatus
+import pytest
 from swagger_codegen.api.exceptions import ErrorApiResponse
 
+from utils.pet_util import PetStatus, create_pet_tag
+from utils.random_simple_data_util import (generate_random_image_url,
+                                           generate_random_string)
 
 pytestmark = [allure.suite("POST /pet")]
 

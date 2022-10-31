@@ -1,8 +1,9 @@
 """
 Tests which checks GET /findByStatus handler
 """
-import pytest
 import allure
+import pytest
+
 from utils.pet_util import PetStatus
 
 pytestmark = [allure.suite("GET /findByStatus")]

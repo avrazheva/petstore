@@ -1,0 +1,25 @@
+# documentation: https://flake8.pycqa.org/en/latest/user/configuration.html
+[flake8]
+exclude =
+      .git,
+      allure-results,
+      .pytest_cache,
+      .idea,
+      __pycache__,
+      .venv,
+      scripts/*
+      ./petstore
+
+no-accept-encodings = true
+max_line_length = 110
+max-complexity = 8
+max-cognitive-complexity = 8
+max-expression-complexity = 8
+per-file-ignores=
+    # ANN - type annotations don't check in tests
+    tests/*: ANN001,ANN201,ANN101
+
+    # D1XX - missing docstrings - we don't require them for src folder methods
+    src/*: D100,D101,D102,D103,D105,D107,ANN003,ANN101
+
+    runner.py: T001

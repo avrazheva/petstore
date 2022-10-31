@@ -1,6 +1,10 @@
 install:
 	poetry install --no-dev
 
+lint:
+	poetry run isort .
+	poetry run flake8 .
+
 client:
 	swagger_codegen generate ./petstore.yaml ./petstore
 

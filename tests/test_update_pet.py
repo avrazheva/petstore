@@ -3,8 +3,9 @@ Tests checks PUT /pet handler
 """
 import allure
 import pytest
-from utils import random_simple_data_util as data_util
 from swagger_codegen.api.exceptions import ErrorApiResponse
+
+from utils import random_simple_data_util as data_util
 
 pytestmark = [allure.suite("PUT /pet")]
 

@@ -1,7 +1,8 @@
 import random
 from enum import Enum
+
+from petstore.apis.pet.addPet import Category, Pet, Tag
 from utils import random_simple_data_util as data_util
-from petstore.apis.pet.addPet import Pet, Category, Tag
 
 
 class PetStatus(Enum):
@@ -44,4 +45,3 @@ def create_simple_pet() -> Pet:
         name=data_util.generate_random_string(),
         photoUrls=[data_util.generate_random_image_url()],
     )
-

@@ -1,8 +1,8 @@
 """
 Tests checks DELETE /pet/{id} handler
 """
-import pytest
 import allure
+import pytest
 import requests
 from swagger_codegen.api.exceptions import ErrorApiResponse
 

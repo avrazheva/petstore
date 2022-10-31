@@ -192,6 +192,20 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "isort"
+version = "5.10.1"
+description = "A Python utility / library to sort Python imports."
+category = "main"
+optional = false
+python-versions = ">=3.6.1,<4.0"
+
+[package.extras]
+pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
+requirements_deprecated_finder = ["pipreqs", "pip-api"]
+colors = ["colorama (>=0.4.3,<0.5.0)"]
+plugins = ["setuptools"]
+
+[[package]]
 name = "jinja2"
 version = "2.11.3"
 description = "A very fast and expressive template engine."
@@ -572,7 +586,7 @@ dev = ["sphinx-issues", "pallets-sphinx-themes", "sphinx", "tox", "coverage", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "f4a40bcae6b3e0ce1fcf941a3e673744dd2ebae66b42a5209650a0ee8faea19b"
+content-hash = "c42a52e4142e833126ebdd2949f38b7cca94cb2c6f6dfa807c0ae8ba1008681a"
 
 [metadata.files]
 allure-pytest = []
@@ -592,6 +606,7 @@ hypothesis-jsonschema = []
 idna = []
 inflection = []
 iniconfig = []
+isort = []
 jinja2 = []
 jsonschema = []
 markupsafe = []

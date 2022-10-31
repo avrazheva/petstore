@@ -1,7 +1,8 @@
-import pytest
 import allure
+import pytest
 from swagger_codegen.api.adapter.requests import RequestsAdapter
 from swagger_codegen.api.configuration import Configuration
+
 from petstore.client import new_client
 from utils.pet_util import create_pet, create_simple_pet
 

@@ -2,14 +2,10 @@ from __future__ import annotations
 
 from swagger_codegen.api.base import BaseApi
 
-from . import addPet
-from . import updatePet
-from . import findPetsByStatus
-from . import findPetsByTags
-from . import getPetById
-from . import updatePetWithForm
-from . import deletePet
-from . import uploadFile
+from . import (addPet, deletePet, findPetsByStatus, findPetsByTags, getPetById,
+               updatePet, updatePetWithForm, uploadFile)
+
+
 class PetApi(BaseApi):
     addPet = addPet.make_request
     updatePet = updatePet.make_request
