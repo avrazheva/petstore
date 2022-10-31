@@ -65,5 +65,4 @@ target/
 
 # test runner
 allure-results
-allure-report
 .pytest_cache
